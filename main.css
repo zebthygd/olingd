@@ -1,0 +1,77 @@
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-size: 16px;
+}
+
+.user-header {
+	width: 100%;
+	height: 8rem;
+	background: url('https://static.wikia.nocookie.net/geometry-dash-fan/images/7/74/AerialGleam.jpeg/revision/latest/scale-to-width-down/1200?cb=20210817023804') center / cover;
+	border-radius: 15px 15px 0 0;
+	position: relative;
+}
+
+.user-header::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 6rem;
+	background: linear-gradient(#ffffff00, #0c2040);
+}
+
+.user {
+	width: 100vw; height: 100vh;
+	display: grid;
+	place-items: center;
+	background: #f1f1f1;
+}
+
+.user-action {
+	width: clamp(200px, 90%, 40rem); min-height: 300px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #d8d8d7;
+
+}
+
+.user-action > * { 
+	padding: 2rem;
+
+}
+
+h2 {
+	font-size: 3rem;
+	font-family: system-ui;
+	text-align: center;
+}
+
+p {
+	font-size: 1rem;
+	text-align: center;
+	margin-top: 2rem;
+	font-family: system-ui;
+}
+
+
+.user-social {
+	padding: 0;
+}
+
+.youtube {
+	background: #fff0f0;
+	padding: 2rem;
+}
+
+.youtube header p {
+	margin: 2rem 0;
+	font-size: 1.5rem;
+}
